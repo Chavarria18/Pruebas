@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage{fancyhdr} 
+\usepackage{lastpage} 
+\usepackage{extramarks} 
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx} 
+\usepackage{listings} 
+\usepackage{courier} 
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} 
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} 
+\lstloadlanguages{c} 
+\lstset{language=[sharp]c,frame=single,
+        basicstyle=\small\ttfamily, 
+        keywordstyle=[1]\color{Blue}\bf,
+        keywordstyle=[2]\color{Purple}, 
+        keywordstyle=[3]\color{Blue}\underbar, 
+        identifierstyle=,                           
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, 
+        stringstyle=\color{Purple}, 
+        showstringspaces=false, 
+        tabsize=5, 
+                morekeywords={rand},
+                morekeywords=[2]{on, off, interp},
+        morekeywords=[3]{test},
+        morecomment=[l][\color{Blue}]{...},
+        numbers=left, 
+        firstnumber=1,        numberstyle=\tiny\color{Blue}, 
+        stepnumber=5 
+}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+
+\newcommand{\perlscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.cs}
+\end{itemize}
+}
+
+\begin{document}
+
+
+\begin{center}
+        \horrule{0.5pt}
+        \huge{Hoja de trabajo \#1} \\
+        \large{Gabriel Chavarria, 20181386, chavarria181386@unis.edu.gt} \\
+\large{25 de julio 2018}\\        
+        \horrule{1pt}
+\end{center}
+
+
+\section*{Ejercicio \#2 Abstracción}
+\begin{enumerate}
+        \item{ Conjunto de nodos: $\left\lbrace 1,2,3,4,5,6\right\rbrace$}
+        
+       
+\end{enumerate}
+    
+\section*{Ejercicio \#3}
+\begin{enumerate}
+        \item{ Una estructura de camino}
+        \item{Modelo algebraico que siga una estructura de camino, donde este permita que un mismo numero pueda salir más de  una vez, y también logre manejar el azar que se requiere.  }
+        \item{Nos aseguramos que no se repita el proceso, se evita que se cree un ciclo.}
+                
+\end{enumerate}
+
+\end{document}
+       
+        
+
+
